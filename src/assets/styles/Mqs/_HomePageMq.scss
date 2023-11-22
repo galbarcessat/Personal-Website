@@ -4,11 +4,11 @@
     }
 
     .arrow {
-        bottom: 60px;
+        bottom: 50px;
     }
 
     .first-arrow {
-        bottom: 45px;
+        bottom: 35px;
     }
 
     .about-me-section {
@@ -124,11 +124,6 @@
             height: rem(360px);
         }
 
-        .hero-text-container {
-            p {
-                font-size: 2.9rem;
-            }
-        }
     }
 
     .projects-section {
@@ -152,6 +147,15 @@
     }
 }
 
+@media (max-width: 580px) {
+    .hero-text-container {
+        p {
+            text-align: center;
+            font-size: 3.1rem;
+        }
+    }
+}
+
 @media (max-width: 530px) {
 
     .hero-section {
@@ -160,12 +164,12 @@
             height: 21.5rem;
         }
 
-        .hero-text-container {
-            p {
-                // font-size: 2.5rem;
-                text-align: center;
-            }
-        }
+        // .hero-text-container {
+        //     p {
+        //         // font-size: 2.5rem;
+        //         text-align: center;
+        //     }
+        // }
     }
 
     .about-me-section {
