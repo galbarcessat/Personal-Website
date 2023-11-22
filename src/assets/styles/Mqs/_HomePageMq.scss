@@ -70,8 +70,8 @@
 
 @media (max-width: 750px) {
     .hero-section {
-        justify-content: center;
-        gap: 3rem;
+        justify-content: start;
+        gap: 2rem;
 
         img {
             width: rem(330px);
@@ -148,28 +148,31 @@
 }
 
 @media (max-width: 580px) {
-    .hero-text-container {
-        p {
-            text-align: center;
-            font-size: 3.1rem;
+    .hero-section {
+        .hero-text-container {
+            p {
+                font-size: 2.9rem;
+            }
         }
     }
 }
 
 @media (max-width: 530px) {
+    .arrow {
+        bottom: 35px;
+        width: 0.5em;
+        height: 0.5em;
+    }
+
+    .first-arrow {
+        bottom: 20px;
+    }
 
     .hero-section {
         img {
             width: 19rem;
             height: 21.5rem;
         }
-
-        // .hero-text-container {
-        //     p {
-        //         // font-size: 2.5rem;
-        //         text-align: center;
-        //     }
-        // }
     }
 
     .about-me-section {
@@ -180,7 +183,21 @@
     }
 }
 
-@media (max-width: 460px){
+@media (max-width: 460px) {
+    .hero-section {
+        img {
+            width: 19rem;
+            height: 21.5rem;
+        }
+
+        .hero-text-container {
+            p {
+                text-align: center;
+                margin-block: 0.4rem;
+            }
+        }
+    }
+
     .about-me-section {
         .surfing-img {
             width: 22.25rem;
