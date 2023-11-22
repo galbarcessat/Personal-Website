@@ -1,0 +1,34 @@
+.about-me-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    grid-column: 2;
+    width: 100%;
+    margin-bottom: rem(130px);
+
+    h1 {
+        font-size: 2.2em;
+        font-family: PoppinsMedium;
+        margin-bottom: 4rem;
+    }
+
+    .about-me-content {
+        display: flex;
+        gap: 5rem;
+    }
+
+    p {
+        max-width: 550px;
+        line-height: 22px;
+        margin-bottom: 2rem;
+    }
+
+    .surfing-img {
+        width: rem(600px);
+        height: rem(400px);
+        border-radius: 1rem;
+        box-shadow: 0 8px 24px #1d8cf229;
+    }
+
+}

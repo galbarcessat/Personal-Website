@@ -1,0 +1,28 @@
+// // RESET
+@import "setup/_reset";
+
+// // SETUP
+@import 'setup/_typography';
+@import "setup/_variables";
+@import "setup/_mixins";
+@import "setup/_functions";
+
+// // BASICS
+@import "base/_helpers";
+@import "base/_base";
+@import "base/_layout";
+
+// // COMPONENTS
+@import "./cmps/HomeAppHeader";
+@import "./cmps/HomeHero";
+@import "./cmps/ArrowsDown";
+@import "./cmps/SkillsContianer";
+@import "./cmps/ProjectsSection";
+@import "./cmps/AboutMe";
+@import "./cmps/ContactMe";
+@import "./cmps/Footer";
+
+// //PAGES
+
+//MQ
+@import "./Mqs/HomePageMq";
