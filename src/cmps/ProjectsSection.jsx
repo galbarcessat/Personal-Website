@@ -88,7 +88,7 @@ export function ProjectsSection({openLinkNewTab}) {
                                 <button className="button" onClick={()=> openLinkNewTab('https://github.com/galbarcessat/MemeGeneratorV1')}>
                                     <span className="button-content">Github</span>
                                 </button>
-                                <button className="button" onClick={()=> openLinkNewTab('https://github.com/galbarcessat/MemeGeneratorV1')}>
+                                <button className="button" onClick={()=> openLinkNewTab('https://galbarcessat.github.io/MemeGeneratorV1/')}>
                                     <span className="button-content">Demo</span>
                                 </button>
                             </div>
