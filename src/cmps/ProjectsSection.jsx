@@ -4,7 +4,8 @@ import AppSusImg from '../assets/imgs/AppSusImg.png'
 import AppSusImg2 from '../assets/imgs/AppSusImg2.png'
 import MemeGeneratorImg from '../assets/imgs/MemeGeneratorImg.png'
 import SpaceInvadersImg from '../assets/imgs/SpaceInvadersImg.png'
-export function ProjectsSection({openLinkNewTab}) {
+import NetflixImg from '../assets/imgs/NetflixImg.png'
+export function ProjectsSection({ openLinkNewTab }) {
 
     return (
         <section id="projects" className="projects-section">
@@ -33,15 +34,48 @@ export function ProjectsSection({openLinkNewTab}) {
                                 other functionalities.
                             </p>
                             <div className="btns-container">
-                                <button className="button" onClick={()=> openLinkNewTab('https://github.com/jinja-ninja/monday')}>
+                                <button className="button" onClick={() => openLinkNewTab('https://github.com/jinja-ninja/monday')}>
                                     <span className="button-content">Github</span>
                                 </button>
-                                <button className="button" onClick={()=> openLinkNewTab('https://funday-k1un.onrender.com/')}>
+                                <button className="button" onClick={() => openLinkNewTab('https://funday-k1un.onrender.com/')}>
                                     <span className="button-content">Demo</span>
                                 </button>
                             </div>
                         </div>
                         <img src={FundayImg} alt="" />
+                    </div>
+                </div>
+
+                <div className='space-invaders-container'>
+                    <div className="project-layout-container">
+                        <div className="project-description">
+                            <p className="project-title">Netflix Clone</p>
+                            <div className='skills-container'>
+                                <Skill text={'ReactJS'} />
+                                <Skill text={'Redux'} />
+                                <Skill text={'SASS'} />
+                                <Skill text={'Firebase'} />
+                                <Skill text={'Stripe'} />
+                                <Skill text={'API'} />
+                            </div>
+
+                            <p> A Neflix clone developed using ReactJS, Redux, Firebase, Stripe and SASS. <br />
+                                Watch Netflix movies or series trailers and get information about each one using
+                                the TMDB API and YouTube API.  <br />
+                                User authentication is implemented with Firebase.
+                                <br />
+                                Stripe checkout feature is integrated, enabling users to choose their monthly plan.
+                            </p>
+                            <div className="btns-container">
+                                <button className="button" onClick={() => openLinkNewTab('https://github.com/galbarcessat/Netflix-clone')}>
+                                    <span className="button-content">Github</span>
+                                </button>
+                                <button className="button" onClick={() => openLinkNewTab('https://neflix-clone-czr8.onrender.com/')}>
+                                    <span className="button-content">Demo</span>
+                                </button>
+                            </div>
+                        </div>
+                        <img src={NetflixImg} alt="" />
                     </div>
                 </div>
 
@@ -59,10 +93,10 @@ export function ProjectsSection({openLinkNewTab}) {
 
                             </p>
                             <div className="btns-container">
-                                <button className="button"  onClick={()=> openLinkNewTab('https://github.com/galbarcessat/AppSus')}>
+                                <button className="button" onClick={() => openLinkNewTab('https://github.com/galbarcessat/AppSus')}>
                                     <span className="button-content">Github</span>
                                 </button>
-                                <button className="button"  onClick={()=> openLinkNewTab('https://galbarcessat.github.io/AppSus/')}>
+                                <button className="button" onClick={() => openLinkNewTab('https://galbarcessat.github.io/AppSus/')}>
                                     <span className="button-content">Demo</span>
                                 </button>
                             </div>
@@ -85,10 +119,10 @@ export function ProjectsSection({openLinkNewTab}) {
                                 The meme editor is powered by Canvas, providing a userfriendly interface for meme creation.
                             </p>
                             <div className="btns-container">
-                                <button className="button" onClick={()=> openLinkNewTab('https://github.com/galbarcessat/MemeGeneratorV1')}>
+                                <button className="button" onClick={() => openLinkNewTab('https://github.com/galbarcessat/MemeGeneratorV1')}>
                                     <span className="button-content">Github</span>
                                 </button>
-                                <button className="button" onClick={()=> openLinkNewTab('https://galbarcessat.github.io/MemeGeneratorV1/')}>
+                                <button className="button" onClick={() => openLinkNewTab('https://galbarcessat.github.io/MemeGeneratorV1/')}>
                                     <span className="button-content">Demo</span>
                                 </button>
                             </div>
@@ -97,31 +131,7 @@ export function ProjectsSection({openLinkNewTab}) {
                     </div>
                 </div>
 
-                <div className='space-invaders-container'>
-                    <div className="project-layout-container">
-                        <div className="project-description">
-                            <p className="project-title">Space Invaders</p>
-                            <div className='skills-container'>
-                                <Skill text={'HTML'} />
-                                <Skill text={'CSS'} />
-                                <Skill text={'JS'} />
-                            </div>
-                            <p>Space Invaders is one of the first projects I built. <br />
-                                It was constructed using vanilla HTML, CSS, and JS.  <br />
-                                It posed a challenge to make the aliens move from side to side, but I managed to make it work with intervals.
-                            </p>
-                            <div className="btns-container">
-                                <button className="button" onClick={()=> openLinkNewTab('https://github.com/galbarcessat/Space-invaders')}>
-                                    <span className="button-content">Github</span>
-                                </button>
-                                <button className="button" onClick={()=> openLinkNewTab('https://galbarcessat.github.io/Space-invaders/')}>
-                                    <span className="button-content">Demo</span>
-                                </button>
-                            </div>
-                        </div>
-                        <img src={SpaceInvadersImg} alt="" />
-                    </div>
-                </div>
+
             </div>
         </section>
     )
